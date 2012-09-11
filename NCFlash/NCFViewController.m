@@ -7,21 +7,25 @@
 //
 
 #import "NCFViewController.h"
-
-@interface NCFViewController ()
-
-@end
+#import "NCFlashlight.h"
 
 @implementation NCFViewController
+@synthesize turnButton;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    if (![NCFlashlight sharedInstance].on) {
+        [[NCFlashlight sharedInstance] toggle];
+        [self.turnButton setTitle:@"Turn off" forState:UIControlStateNormal];
+    }
 }
 
 - (void)viewDidUnload
 {
+    [self setTurnButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -29,6 +33,16 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)turnButtonTapped:(id)sender {
+    [[NCFlashlight sharedInstance] toggle];
+
+    if ([NCFlashlight sharedInstance].on) {
+        [self.turnButton setTitle:@"Turn off" forState:UIControlStateNormal];
+    } else {
+        [self.turnButton setTitle:@"Turn on" forState:UIControlStateNormal];
+    }
 }
 
 @end
