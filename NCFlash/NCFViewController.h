@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NCFViewController : UIViewController
+@class NCFlashlight;
 
+@interface NCFViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *turnButton;
+
+- (IBAction)turnButtonTapped:(id)sender;
 @end

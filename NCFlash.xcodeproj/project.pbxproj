@@ -20,6 +20,9 @@
 		6A0F9C9415FEF501004F6813 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F9C7515FEF500004F6813 /* Foundation.framework */; };
 		6A0F9C9C15FEF501004F6813 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A0F9C9A15FEF501004F6813 /* InfoPlist.strings */; };
 		6A0F9C9F15FEF501004F6813 /* NCFlashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F9C9E15FEF501004F6813 /* NCFlashTests.m */; };
+		6A0F9CAE15FEF7D1004F6813 /* NCFlashlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F9CAD15FEF7D1004F6813 /* NCFlashlight.m */; };
+		6A0F9CAF15FEF7D1004F6813 /* NCFlashlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F9CAD15FEF7D1004F6813 /* NCFlashlight.m */; };
+		6A0F9CB215FEF833004F6813 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F9CB115FEF833004F6813 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +40,24 @@
 		6A0F9C7315FEF500004F6813 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A0F9C7515FEF500004F6813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A0F9C7715FEF500004F6813 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6A0F9C7B15FEF500004F6813 /* NCFlash-Info.plist */ = {isa = PBXFileReference; path = "NCFlash-Info.plist"; sourceTree = "<group>"; };
+		6A0F9C7B15FEF500004F6813 /* NCFlash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NCFlash-Info.plist"; sourceTree = "<group>"; };
 		6A0F9C7D15FEF500004F6813 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A0F9C7F15FEF500004F6813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6A0F9C8115FEF500004F6813 /* NCFlash-Prefix.pch */ = {isa = PBXFileReference; path = "NCFlash-Prefix.pch"; sourceTree = "<group>"; };
-		6A0F9C8215FEF500004F6813 /* NCFAppDelegate.h */ = {isa = PBXFileReference; path = NCFAppDelegate.h; sourceTree = "<group>"; };
+		6A0F9C8115FEF500004F6813 /* NCFlash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCFlash-Prefix.pch"; sourceTree = "<group>"; };
+		6A0F9C8215FEF500004F6813 /* NCFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCFAppDelegate.h; sourceTree = "<group>"; };
 		6A0F9C8315FEF500004F6813 /* NCFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCFAppDelegate.m; sourceTree = "<group>"; };
 		6A0F9C8615FEF500004F6813 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6A0F9C8815FEF501004F6813 /* NCFViewController.h */ = {isa = PBXFileReference; path = NCFViewController.h; sourceTree = "<group>"; };
+		6A0F9C8815FEF501004F6813 /* NCFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCFViewController.h; sourceTree = "<group>"; };
 		6A0F9C8915FEF501004F6813 /* NCFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCFViewController.m; sourceTree = "<group>"; };
 		6A0F9C9015FEF501004F6813 /* NCFlashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCFlashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0F9C9115FEF501004F6813 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6A0F9C9915FEF501004F6813 /* NCFlashTests-Info.plist */ = {isa = PBXFileReference; path = "NCFlashTests-Info.plist"; sourceTree = "<group>"; };
+		6A0F9C9915FEF501004F6813 /* NCFlashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NCFlashTests-Info.plist"; sourceTree = "<group>"; };
 		6A0F9C9B15FEF501004F6813 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6A0F9C9D15FEF501004F6813 /* NCFlashTests.h */ = {isa = PBXFileReference; path = NCFlashTests.h; sourceTree = "<group>"; };
+		6A0F9C9D15FEF501004F6813 /* NCFlashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCFlashTests.h; sourceTree = "<group>"; };
 		6A0F9C9E15FEF501004F6813 /* NCFlashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCFlashTests.m; sourceTree = "<group>"; };
+		6A0F9CAC15FEF7D1004F6813 /* NCFlashlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCFlashlight.h; sourceTree = "<group>"; };
+		6A0F9CAD15FEF7D1004F6813 /* NCFlashlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCFlashlight.m; sourceTree = "<group>"; };
+		6A0F9CB115FEF833004F6813 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0F9CB215FEF833004F6813 /* AVFoundation.framework in Frameworks */,
 				6A0F9C7415FEF500004F6813 /* UIKit.framework in Frameworks */,
 				6A0F9C7615FEF500004F6813 /* Foundation.framework in Frameworks */,
 				6A0F9C7815FEF500004F6813 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +107,7 @@
 		6A0F9C7215FEF500004F6813 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A0F9CB115FEF833004F6813 /* AVFoundation.framework */,
 				6A0F9C7315FEF500004F6813 /* UIKit.framework */,
 				6A0F9C7515FEF500004F6813 /* Foundation.framework */,
 				6A0F9C7715FEF500004F6813 /* CoreGraphics.framework */,
@@ -117,6 +125,8 @@
 				6A0F9C8815FEF501004F6813 /* NCFViewController.h */,
 				6A0F9C8915FEF501004F6813 /* NCFViewController.m */,
 				6A0F9C7A15FEF500004F6813 /* Supporting Files */,
+				6A0F9CAC15FEF7D1004F6813 /* NCFlashlight.h */,
+				6A0F9CAD15FEF7D1004F6813 /* NCFlashlight.m */,
 			);
 			path = NCFlash;
 			sourceTree = "<group>";
@@ -261,6 +271,7 @@
 				6A0F9C8015FEF500004F6813 /* main.m in Sources */,
 				6A0F9C8415FEF500004F6813 /* NCFAppDelegate.m in Sources */,
 				6A0F9C8A15FEF501004F6813 /* NCFViewController.m in Sources */,
+				6A0F9CAE15FEF7D1004F6813 /* NCFlashlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A0F9C9F15FEF501004F6813 /* NCFlashTests.m in Sources */,
+				6A0F9CAF15FEF7D1004F6813 /* NCFlashlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +442,7 @@
 				6A0F9CA415FEF501004F6813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A0F9CA515FEF501004F6813 /* Build configuration list for PBXNativeTarget "NCFlashTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +451,7 @@
 				6A0F9CA715FEF501004F6813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
