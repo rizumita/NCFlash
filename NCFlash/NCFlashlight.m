@@ -18,6 +18,17 @@
 @dynamic on;
 @synthesize session = _session;
 
++ (NCFlashlight *)sharedInstance {
+    static NCFlashlight *_instance = nil;
+
+    @synchronized (self) {
+        if (_instance == nil) {
+            _instance = [[self alloc] init];
+        }
+    }
+
+    return _instance;
+}
 
 - (BOOL)on {
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];

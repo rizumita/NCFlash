@@ -12,7 +12,8 @@
 
 @property (nonatomic, assign, readonly) BOOL on;
 
-- (void)toggle;
++ (NCFlashlight *)sharedInstance;
 
+- (void)toggle;
 
 @end

@@ -9,24 +9,18 @@
 #import "NCFViewController.h"
 #import "NCFlashlight.h"
 
-@interface NCFViewController ()
-@property (nonatomic, strong) NCFlashlight *flashlight;
-
-
-@end
-
 @implementation NCFViewController
 @synthesize turnButton;
-@synthesize flashlight = _flashlight;
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    self.flashlight = [[NCFlashlight alloc] init];
-
-    if (!self.flashlight.on) [self.flashlight toggle];
+    if (![NCFlashlight sharedInstance].on) {
+        [[NCFlashlight sharedInstance] toggle];
+        [self.turnButton setTitle:@"Turn off" forState:UIControlStateNormal];
+    }
 }
 
 - (void)viewDidUnload
@@ -42,9 +36,9 @@
 }
 
 - (IBAction)turnButtonTapped:(id)sender {
-    [self.flashlight toggle];
+    [[NCFlashlight sharedInstance] toggle];
 
-    if (self.flashlight.on) {
+    if ([NCFlashlight sharedInstance].on) {
         [self.turnButton setTitle:@"Turn off" forState:UIControlStateNormal];
     } else {
         [self.turnButton setTitle:@"Turn on" forState:UIControlStateNormal];
